@@ -20,6 +20,22 @@
         <a class="reset-login" onclick="forgot()" href="#">esqueceu a senha?</a>
       </form>
     </main>
+    <!-- modal name-password -->
+    <div class="modal" id="modal-username">
+    <div class="name-password ">
+      <span class="close-name-password" onclick="closeUsername()">&times</span>
+    <p class="modal-p"> voce nao colocou o senha  ou nome de usuario</p>
+    </div>
+    </div>
+    <!-- modal reset-password -->
+    <div class="modal" id="modal-reset">
+    <div class="reset-password ">
+      <span class="close-reset-password" onclick="closeReset()">&times</span>
+      <p class="modal-p"> enviaremos um email de validação digite seu email</p>
+      <input class="input-modal" type="email">
+      <button class="modal-btn" onclick="closeReset()">enviar</button>
+    </div>
+    </div>
 <!-- scripts -->  
   <script src="js/script.js"></script>
 </body>

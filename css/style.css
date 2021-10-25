@@ -64,11 +64,14 @@ body {
   margin: auto 50%;
   transform: translateX(-50%);
   background: none;
+  color: var(--color5);
+  font-size: 1rem;
+  text-align: center;
 }
 
 ::-webkit-input-placeholder {
   font-size: 1rem;
-  color: var(--color5);
+  color: var(--color4);
   text-align: center;
 }
 
@@ -107,4 +110,72 @@ body {
   text-decoration: none;
   text-align: center;
   color: var(--color5);
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out,
+    transform 0.25s ease-in-out;
+}
+
+.name-password,
+.reset-password {
+  background: var(--color1);
+  padding: 16px 24px;
+  width: 384px;
+  border-radius: 0.5rem;
+}
+
+.close-reset-password,
+.close-name-password {
+  float: right;
+  width: 24px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background: var(--color3);
+}
+
+.modal-p {
+  font-size: 1rem;
+  color: var(--color5);
+}
+
+.input-modal {
+  outline: none;
+  border: unset;
+  border-bottom: 2px solid var(--color5);
+  width: 80%;
+  margin: 10%;
+  color: var(--color5);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.modal-btn {
+  background: linear-gradient(90deg, var(--color4), var(--color5));
+  border: 2px solid var(--color3);
+  width: 80%;
+  height: 30px;
+  margin: 0 10%;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }
