@@ -13,11 +13,13 @@
   --color5: hsl(211, 51%, 16%);
 }
 
-body {
+body,
+html {
   background: linear-gradient(120deg, var(--color5), var(--color4));
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
 }
 
 .login {
@@ -135,7 +137,7 @@ body {
 .reset-password {
   background: var(--color1);
   padding: 16px 24px;
-  width: 384px;
+  width: 350px;
   border-radius: 0.5rem;
 }
 
