@@ -6,6 +6,8 @@ var modalReset = document.getElementById('modal-reset');
 function send(){
     if((name == '')||(password == '')){
         modalUsername.classList.add("show-modal");
+    }else{
+        confirm(`voce esta logado como ${name}`)
     }
 }
 
