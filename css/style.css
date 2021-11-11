@@ -102,6 +102,8 @@ html {
   font-weight: bold;
   color: var(--color1);
   transition: 0.3s ease;
+  text-align: center;
+  line-height: 35px;
 }
 
 .login-btn:hover {

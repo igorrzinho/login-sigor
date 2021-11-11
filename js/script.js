@@ -1,13 +1,13 @@
-var name = document.getElementById('username').value;
+var name1 = document.getElementById('username').value;
 var password = document.getElementById('password').value;
 var modalUsername = document.getElementById('modal-username')
 var modalReset = document.getElementById('modal-reset');
 
 function send(){
-    if((name == '')||(password == '')){
+    if((name1 == '')||(password == '')){
         modalUsername.classList.add("show-modal");
     }else{
-        confirm(`voce esta logado como ${name}`)
+        confirm(`voce esta logado como ${name1}`)
     }
 }
 
